@@ -1,0 +1,37 @@
+<!-- Highlight Card -->
+<div class="card highlight-card card-small">
+
+
+
+    <span>Countries</span>
+
+
+</div>
+
+
+<div class="card-container">
+    <!-- <div class="card" *ngFor="let c of countries">
+        <div class="country-img">
+            <img [src]="c?.flags?.svg" alt="" width="30" height="24">
+            <span class="country">{{c.name.common}} </span>
+            <p>{{c.name.nativeName?.ara?.common}}</p>
+            <small *ngIf="c.capital">{{c.capital[0]}} | {{c.population}} </small>
+        </div>
+        <p class="contient">{{c.region}} | <a target="_blank" [href]="c.maps.googleMaps">Map</a></p>
+
+    </div> -->
+
+    <div class="card" *ngFor="let c of countries">
+        <div class="country-img">
+            <img [src]="c.flags.png" alt="" width="30" height="24">
+            <span class="country">{{c.name}} </span>
+            <p>{{c.nativeName}}</p>
+            <small>{{c.capital}} | {{c.population}} </small>
+        </div>
+        <p class="contient">{{c.region}} 
+            <!-- | <a target="_blank" [href]="c.maps.googleMaps">Map</a> -->
+        </p>
+
+    </div>
+  
+</div>
